@@ -1,0 +1,14 @@
+{
+  "type": "record",
+  "name": "Invalid",
+  "namespace": "com.fillmore_labs.avro.logicaltypes",
+  "fields": [
+    {
+      "name": "invalid",
+      "type": {
+        "type": "long",
+        "logicalType": "zoneddatetime-string"
+      }
+    }
+  ]
+}

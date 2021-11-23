@@ -1,0 +1,85 @@
+= Avro LogicalType Conversion
+:Author:    Oliver Eikemeier
+:Email:     <eikemeier@fillmore-labs.com>
+:Date:      2021-11
+:Revision:  v0.1
+:toc: macro
+
+image:https://badge.buildkite.com/08a60ec4f2e967b3c7ae92c70ac9c9d274726bd054d53e7d70.svg?branch=main[title="Buildkite build status",link=https://buildkite.com/fillmore-labs/avro-logicaltype-conversion]
+image:https://img.shields.io/github/license/fillmore-labs/avro-logical-type-conversion[title="License",link=https://github.com/fillmore-labs/avro-logical-type-conversion/blob/main/LICENSE]
+
+toc::[]
+
+== Purpose
+
+This source demonstrates how to use a simple Avro logical type
+https://avro.apache.org/docs/current/api/java/org/apache/avro/Conversion.html[Conversion].
+
+In this example we use
+https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html[`java.time.ZonedDateTime`]
+with an underlying https://avro.apache.org/docs/current/spec.html#schema_primitive[Avro string].
+
+As an example, we use a simple Java class with an optional event name and a time:
+[source,java]
+----
+public final class AvroEvent {
+  @org.apache.avro.reflect.Nullable
+  public String name;
+
+  public ZonedDateTime time;
+}
+----
+
+Via
+https://avro.apache.org/docs/current/api/java/org/apache/avro/specific/SpecificData.html#getSchema-java.lang.reflect.Type-[`getSchema(AvroEvent.class)`]
+we get the Avro schema in JSON format:
+[source,json]
+----
+{
+  "type" : "record",
+  "name" : "AvroEvent",
+  "namespace" : "com.fillmore_labs.avro.logicaltypes",
+  "doc" : "Type documentation",
+  "fields" : [ {
+    "name" : "name",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "time",
+    "type" : {
+      "type" : "string",
+      "logicalType" : "zoneddatetime-string"
+    }
+  } ]
+}
+----
+
+and can now serialize and deserialize this class to Avro format.
+
+== Running
+
+=== Prerequisites
+
+You need https://github.com/bazelbuild/bazelisk[Bazelisk] installed, with https://brew.sh[HomeBrew]
+just use [source,shell]`brew install bazelbuild/tap/bazelisk`.
+
+=== Demo
+
+[source,shell]
+bazel run //:main
+
+in the resulting log we first see the schema, then the original, encoded and decoded value.
+
+Since the encoded value is binary, non-ASCII characters are replaced by dots.
+
+=== Tests
+
+To run all tests, use
+
+[source,shell]
+bazel test //src/test/...
+
+== Notes
+
+For a more elaborate example see
+https://github.com/fillmore-labs/kafka-sensors[Kafka Serialization Playground].
