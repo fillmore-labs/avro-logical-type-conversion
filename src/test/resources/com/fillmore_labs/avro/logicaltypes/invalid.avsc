@@ -5,6 +5,7 @@
   "fields": [
     {
       "name": "invalid",
+      "doc": "Invalid field, since zoneddatetime-string needs to be backed by a string",
       "type": {
         "type": "long",
         "logicalType": "zoneddatetime-string"

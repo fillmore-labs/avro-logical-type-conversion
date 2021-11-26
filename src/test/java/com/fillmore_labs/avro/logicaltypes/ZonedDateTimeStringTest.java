@@ -10,7 +10,7 @@ import org.junit.Test;
 
 public final class ZonedDateTimeStringTest {
   @Test
-  public void testEncoder() {
+  public void testValidate() {
     var zonedDateTimeString = ZonedDateTimeConversion.zonedDateTimeString();
 
     var schema = getSchema("invalid.avsc");
