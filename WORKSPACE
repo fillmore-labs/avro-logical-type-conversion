@@ -33,16 +33,16 @@ http_archive(
 
 http_archive(
     name = "com_google_protobuf",
-    sha256 = "3baaf8ad66efb2ff485741d8804a29a38c0ab402a86123a5210d1c4630eb2580",
-    strip_prefix = "protobuf-f2ffe4fbefdb35180038ad41202e3f632710c897",
-    url = "https://github.com/protocolbuffers/protobuf/archive/f2ffe4fbefdb35180038ad41202e3f632710c897.tar.gz",
+    sha256 = "87407cd28e7a9c95d9f61a098a53cf031109d451a7763e7dd1253abf8b4df422",
+    strip_prefix = "protobuf-3.19.1",
+    url = "https://github.com/protocolbuffers/protobuf/archive/refs/tags/v3.19.1.tar.gz",
 )
 
 http_archive(
     name = "rules_jvm_external",
-    sha256 = "995ea6b5f41e14e1a17088b727dcff342b2c6534104e73d6f06f1ae0422c2308",
-    strip_prefix = "rules_jvm_external-4.1",
-    url = "https://github.com/bazelbuild/rules_jvm_external/archive/4.1.tar.gz",
+    sha256 = "2cd77de091e5376afaf9cc391c15f093ebd0105192373b334f0a855d89092ad5",
+    strip_prefix = "rules_jvm_external-4.2",
+    url = "https://github.com/bazelbuild/rules_jvm_external/archive/4.2.tar.gz",
 )
 
 http_archive(
