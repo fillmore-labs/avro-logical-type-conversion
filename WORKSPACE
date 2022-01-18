@@ -33,9 +33,9 @@ http_archive(
 
 http_archive(
     name = "com_google_protobuf",
-    sha256 = "87407cd28e7a9c95d9f61a098a53cf031109d451a7763e7dd1253abf8b4df422",
-    strip_prefix = "protobuf-3.19.1",
-    url = "https://github.com/protocolbuffers/protobuf/archive/refs/tags/v3.19.1.tar.gz",
+    sha256 = "390191a0d7884b3e52bb812c440ad1497b9d484241f37bb8e2ccc8c2b72d6c36",
+    strip_prefix = "protobuf-3.19.3",
+    url = "https://github.com/protocolbuffers/protobuf/archive/refs/tags/v3.19.3.tar.gz",
 )
 
 http_archive(
@@ -47,9 +47,9 @@ http_archive(
 
 http_archive(
     name = "com_github_bazelbuild_buildtools",
-    sha256 = "ae34c344514e08c23e90da0e2d6cb700fcd28e80c02e23e4d5715dddcb42f7b3",
-    strip_prefix = "buildtools-4.2.2",
-    url = "https://github.com/bazelbuild/buildtools/archive/refs/tags/4.2.2.tar.gz",
+    sha256 = "d368c47bbfc055010f118efb2962987475418737e901f7782d2a966d1dc80296",
+    strip_prefix = "buildtools-4.2.5",
+    url = "https://github.com/bazelbuild/buildtools/archive/refs/tags/4.2.5.tar.gz",
 )
 
 http_archive(
@@ -63,7 +63,7 @@ http_archive(
 
 load("@io_bazel_rules_go//go:deps.bzl", "go_register_toolchains", "go_rules_dependencies")
 
-go_register_toolchains(go_version = "1.17.3")
+go_register_toolchains(go_version = "1.17.6")
 
 go_rules_dependencies()
 
@@ -138,16 +138,16 @@ maven_install(
         "com.google.code.findbugs:jsr305:3.0.2",
         "com.google.code.gson:gson:2.8.9",
         "com.google.errorprone:error_prone_annotations:2.10.0",
-        "com.google.flogger:flogger-system-backend:0.7.1",
-        "com.google.flogger:flogger:0.7.1",
+        "com.google.flogger:flogger-system-backend:0.7.4",
+        "com.google.flogger:flogger:0.7.4",
         "com.google.guava:guava:31.0.1-jre",
         "com.google.j2objc:j2objc-annotations:1.3",
         "jakarta.annotation:jakarta.annotation-api:1.3.5",
         "javax.inject:javax.inject:1",
         "org.apache.avro:avro:1.11.0",
-        "org.checkerframework:checker-qual:3.19.0",
-        "org.checkerframework:checker-util:3.19.0",
-        "org.checkerframework:checker:3.19.0",
+        "org.checkerframework:checker-qual:3.21.1",
+        "org.checkerframework:checker-util:3.21.1",
+        "org.checkerframework:checker:3.21.1",
         "org.slf4j:slf4j-api:1.8.0-beta4",
         "org.slf4j:slf4j-jdk14:1.8.0-beta4",
         maven.artifact(
@@ -171,7 +171,7 @@ maven_install(
         maven.artifact(
             "nl.jqno.equalsverifier",
             "equalsverifier",
-            "3.7.2",
+            "3.8.2",
             testonly = True,
         ),
     ],

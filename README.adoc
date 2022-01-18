@@ -61,7 +61,7 @@ and can now serialize and deserialize this class to Avro format.
 === Prerequisites
 
 You need https://github.com/bazelbuild/bazelisk[Bazelisk] installed, with https://brew.sh[HomeBrew]
-just use [source,shell]`brew install bazelbuild/tap/bazelisk`.
+just use [source,shell]`brew install bazelisk`.
 
 === Demo
 
