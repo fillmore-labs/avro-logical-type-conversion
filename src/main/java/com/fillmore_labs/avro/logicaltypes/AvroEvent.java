@@ -28,8 +28,7 @@ public final class AvroEvent {
     DECODER = new BinaryMessageDecoder<>(MODEL, SCHEMA);
   }
 
-  @org.apache.avro.reflect.Nullable
-  public @Nullable String name;
+  @org.apache.avro.reflect.Nullable public @Nullable String name;
 
   public ZonedDateTime time;
 
@@ -49,6 +48,10 @@ public final class AvroEvent {
 
   @Override
   public String toString() {
-    return MoreObjects.toStringHelper(this).omitNullValues().add("name", name).add("time", time).toString();
+    return MoreObjects.toStringHelper(this)
+        .omitNullValues()
+        .add("name", name)
+        .add("time", time)
+        .toString();
   }
 }
