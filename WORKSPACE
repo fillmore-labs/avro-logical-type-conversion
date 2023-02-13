@@ -144,7 +144,7 @@ maven_install(
         "com.google.j2objc:j2objc-annotations:1.3",
         "jakarta.annotation:jakarta.annotation-api:1.3.5",
         "javax.inject:javax.inject:1",
-        "org.apache.avro:avro:1.11.0",
+        "org.apache.avro:avro:1.11.1",
         "org.checkerframework:checker-qual:3.21.3",
         "org.checkerframework:checker-util:3.21.3",
         "org.checkerframework:checker:3.21.3",
