@@ -141,7 +141,7 @@ maven_install(
         "com.google.flogger:flogger-system-backend:0.7.4",
         "com.google.flogger:flogger:0.7.4",
         "com.google.guava:guava:31.1-jre",
-        "com.google.j2objc:j2objc-annotations:1.3",
+        "com.google.j2objc:j2objc-annotations:2.8",
         "jakarta.annotation:jakarta.annotation-api:1.3.5",
         "javax.inject:javax.inject:1",
         "org.apache.avro:avro:1.11.1",
