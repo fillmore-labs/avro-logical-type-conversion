@@ -148,7 +148,7 @@ maven_install(
         "org.checkerframework:checker-qual:3.30.0",
         "org.checkerframework:checker-util:3.30.0",
         "org.checkerframework:checker:3.30.0",
-        "org.slf4j:slf4j-api:1.8.0-beta4",
+        "org.slf4j:slf4j-api:2.0.6",
         "org.slf4j:slf4j-jdk14:1.8.0-beta4",
         maven.artifact(
             "com.google.truth",
