@@ -33,9 +33,9 @@ http_archive(
 
 http_archive(
     name = "com_google_protobuf",
-    sha256 = "a1562006dbd31e79c12f944c359495807900a8b71f5bf0f6fa7741898259b2cd",
-    strip_prefix = "protobuf-3.22.0",
-    url = "https://github.com/protocolbuffers/protobuf/archive/refs/tags/v3.22.0.tar.gz",
+    sha256 = "cf9c2f12262ccaccf56f5baf0580a656a09bea6d7cb6b6418b03d30fabe6c4e9",
+    strip_prefix = "protobuf-4.22.0",
+    url = "https://github.com/protocolbuffers/protobuf/archive/refs/tags/v4.22.0.tar.gz",
 )
 
 http_archive(
