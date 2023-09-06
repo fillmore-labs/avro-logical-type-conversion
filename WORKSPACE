@@ -146,7 +146,7 @@ maven_install(
         "javax.inject:javax.inject:1",
         "org.apache.avro:avro:1.11.2",
         "org.checkerframework:checker-qual:3.38.0",
-        "org.checkerframework:checker-util:3.37.0",
+        "org.checkerframework:checker-util:3.38.0",
         "org.checkerframework:checker:3.38.0",
         "org.slf4j:slf4j-api:2.0.9",
         "org.slf4j:slf4j-jdk14:2.0.9",
