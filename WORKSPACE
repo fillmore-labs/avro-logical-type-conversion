@@ -153,7 +153,7 @@ maven_install(
         maven.artifact(
             "com.google.truth",
             "truth",
-            "1.3.0",
+            "1.4.0",
             testonly = True,
         ),
         maven.artifact(
