@@ -140,7 +140,7 @@ maven_install(
         "com.google.errorprone:error_prone_annotations:2.30.0",
         "com.google.flogger:flogger-system-backend:0.8",
         "com.google.flogger:flogger:0.8",
-        "com.google.guava:guava:33.2.1-jre",
+        "com.google.guava:guava:33.3.0-jre",
         "com.google.j2objc:j2objc-annotations:3.0.0",
         "jakarta.annotation:jakarta.annotation-api:3.0.0",
         "javax.inject:javax.inject:1",
