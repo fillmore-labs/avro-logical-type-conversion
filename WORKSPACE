@@ -171,7 +171,7 @@ maven_install(
         maven.artifact(
             "nl.jqno.equalsverifier",
             "equalsverifier",
-            "3.16.2",
+            "3.17",
             testonly = True,
         ),
     ],
