@@ -145,7 +145,7 @@ maven_install(
         "jakarta.annotation:jakarta.annotation-api:3.0.0",
         "javax.inject:javax.inject:1",
         "org.apache.avro:avro:1.12.0",
-        "org.checkerframework:checker-qual:3.48.1",
+        "org.checkerframework:checker-qual:3.48.2",
         "org.checkerframework:checker-util:3.48.1",
         "org.checkerframework:checker:3.48.2",
         "org.slf4j:slf4j-api:2.0.16",
