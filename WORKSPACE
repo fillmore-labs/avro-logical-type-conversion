@@ -54,9 +54,9 @@ http_archive(
 
 http_archive(
     name = "google_bazel_common",
-    sha256 = "df9e8a47f86866ddd90bddb39954c279250121de73dafe222aeaab22f0939ca4",
-    strip_prefix = "bazel-common-9f8175287d46cdd21accb4b504a612b44c0f0564",
-    url = "https://github.com/google/bazel-common/archive/9f8175287d46cdd21accb4b504a612b44c0f0564.tar.gz",
+    sha256 = "0df5d1726a6151130767da48a989abb1c8206f0882b4f76c9087df2ac854e107",
+    strip_prefix = "bazel-common-0aa5acbefe37b58cc8f0fbdb510606bbeb19ef8a",
+    url = "https://github.com/google/bazel-common/archive/0aa5acbefe37b58cc8f0fbdb510606bbeb19ef8a.tar.gz",
 )
 
 # ---
